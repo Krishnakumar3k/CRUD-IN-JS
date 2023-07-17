@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+}
+.header{
+    width: 100%;
+    padding: 10px 30px;
+    background-color: rgb(251, 217, 130);
+
+}
+
+.header h5{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+/* btn-box  design*/
+
+.btn-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 30px;
+    
+}
+
+
+.btn-box .left-box{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+ /*   float: left; */
+}
+
+ .btn-box .left-box input[type="checkbox"]{
+    width:50px;
+    height: 40px;
+    cursor: pointer;
+   
+}
+   
+
+.btn-box .left-box button{
+    border: none;
+    outline: none;
+    background-color: rgb(33, 170, 33);
+    padding: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin:5px 5px ;
+    border-radius: 5px;
+}
+
+/* botton box of search box */
+.btn-box .right-box{
+    width: 50%;
+    height: 100%;
+}
+
+.btn-box .right-box i{
+    font-size: 25px;
+    color: rgb(122, 132, 134);
+    padding: 10PX;
+
+}
+
+.btn-box .right-box input{
+    padding: 13px;
+    border: none;
+    outline: none;
+    width: 25rem;
+    border-bottom: 2px solid rgb(145, 159, 163);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.btn-box .right-box button{
+    border: none;
+    outline: none;
+    background-color: rgb(124, 126, 239);
+    padding: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin:5px 5px ;
+    border-radius: 5px;
+}
+/* ---------------------------------------------- */
+
+/* Desing Table Box  */
+
+
+.table-box{
+    width: 100%;
+    padding:30px;
+}
+
+.table-box table{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    
+}
+
+.table-box table tr th{
+    border-right: 1px solid #ccc;
+    padding: 15px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc ;
+}
+
+.table-box table tr td{
+    border-bottom: 1px solid #ccc ;
+    padding: 10px 0px 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1px solid #ccc ;
+}
+
+.table-box table tr td button{
+    width: 30%;
+    border: none;
+    outline: none;
+    background-color: red;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin:5px 5px ;
+    border-radius: 5px;
+    padding: 5px 0px 5px;
+
+}
+
+
+
+/* Molde css  code  */
+/* model parent node */
+
+.model{
+    width: 0%;
+    height: auto;
+    background-color:rgb(221, 221, 227); ;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-top: 5px solid  rgb(228, 249, 249);
+    opacity: 0; /* hiding the form */
+    z-index: 1;/* hiding the form */
+    transition: 0.5s ease-in-out; /*  is used as to show the form smoothly when we click on the add data button */
+
+}
+.model.active{
+    opacity: 1;
+    z-index: 1;
+    width: 70%;/* for the form showin animation to show smoothly */
+}
+
+
+
+.model .close-icon{
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    font-size: 35px;
+    padding: 10px; ;
+    color: rgb(23, 23, 23);
+    cursor: pointer;
+   
+}
+
+/* model child node1 */
+
+.model .left-model{
+    width: 30%;
+    height: 100%;
+    background-color:rgb(221, 221, 227);
+/*     float: left; */
+}
+
+.model .left-model .img-box{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding: 30px;
+    position: relative;
+   
+}
+
+.model .left-model .img-box input{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 60px; 
+    top: 90px;
+  opacity: 0;
+  cursor: pointer;
+    
+}
+
+.model .left-model .img-box i{
+    font-size: 30px;
+    padding: 10px;
+    position: absolute;
+    right: 60px; 
+    top: 90px;
+}
+
+img{
+    border-radius: 10px;
+    border-color: black;
+}
+
+/* model chilid node2 */
+
+.model .right-model{
+    width:70%;
+    height: 100%;
+   /*  background-color: blue; */
+    border-left: 5px groove rgb(213, 243, 246);
+    padding: 30px;
+ /*    float: left; */
+
+}
+
+.model .right-model .input-box{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.model .right-model .input-box label{
+    font-size: 22px;
+    font-weight: 100;
+    font-family: sans-serif;
+    margin: 20px 0;
+}
+
+.model .right-model .input-box input{
+    width: 70%;
+    margin: 10px 0; /* matgin for upper 10px  */
+    border: none;
+    padding: 13px; /* paddin in inner of input box */
+    outline: none;
+    border-bottom: 2px solid rgb(93, 121, 234);
+    background-color: transparent;
+
+}
+
+.model .right-model .input-box button{
+    width: 45%;
+    background-color: blue;
+    padding: 13px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+   margin: 0px 5px;
+   border: none;
+   margin-top: 10px;
+   cursor: pointer;
+
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./style.css">
+<!-- cdn icon-Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+ integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- sweet alert -->
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+    <!-- header part Design -->
+<div class="header">
+    <h5>Data Recorder</h5>
+</div>
+
+<div class="btn-box">
+    <div class="left-box">
+        <button id="add-btn"><i class="fa fa-plus"></i>&nbsp; Add Data</button>
+        <button id="del-all-btn" style="background-color: rgb(174, 34, 34);"> <i class="fa fa-eraser"></i> &nbsp; Clear All Data</button>
+        <input type="checkbox" name="" id="delAll-box">
+    </div>
+    <div class="right-box">
+        <i class="fa fa-search"></i>
+        <input type="text" id="empId" placeholder="Enter For Search">
+        <button>Search</button>
+    </div>
+</div>
+
+<!-- Table Creating -->
+<div class="table-box">
+    <table> 
+    <tr>
+        <th>Sr.No</th>
+        <th>Profile</th>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>E-mail</th>
+        <th>Office Code</th>
+        <th>Job Title</th>
+        <th>Action</th>
+    </tr>
+
+<!--     <tr>
+        <th>Sr.No</th>
+        <th>Profile</th>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>E-mail</th>
+        <th>Office Code</th>
+        <th>Job Title</th>
+        <th>Action</th>
+    </tr>
+
+    <tr>
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>
+        <button style="background-color: green;"><i class="fa fa-eye"></i></button>
+        <button><i class="fa fa-trash"></i></button>
+        </td> 
+    </tr>
+
+    <tr>
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>
+        <button style="background-color: green;"><i class="fa fa-eye"></i></button>
+        <button><i class="fa fa-trash"></i></button>
+        </td> 
+    </tr>
+
+    <tr>
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>Hello KK</td> 
+        <td>
+        <button style="background-color: green;"><i class="fa fa-eye"></i></button>
+        <button><i class="fa fa-trash"></i></button>
+        </td> 
+    </tr> -->
+    
+    <tbody id="table-data"></tbody>
+</table>
+</div>
+
+<!-- creating form model for add data -->
+ <div class="model">
+    <i class="fa fa-times-circle  close-icon"></i>
+    <!-- left model of form -->
+    <div class="left-model">
+        <div class="img-box">
+            <img src="./img/pics1.jpg" id="profile-pic" width="150px" height="150px" alt="">
+            <i class="fa fa-plus"></i>
+            <input type="file" id="upload-pic">
+        </div>
+    </div>
+    <!-- right-body of form  -->
+    <div class="right-model">
+    <form id="register-form">
+        <div class="input-box">
+            <label for="id">Id</label>
+            <input type="text" id="id">
+        </div>
+
+        <div class="input-box">
+            <label for="name">Name</label>
+            <input type="text" required id="name">
+        </div>
+        <div class="input-box">
+            <label for="l-name">Last Name</label>
+            <input type="text" required  id="l-name">
+        </div>
+
+        <div class="input-box">
+            <label for="email">E-mail</label>
+            <input type="text" required id="email">
+        </div>
+        <div class="input-box">
+            <label for="office-code">Office Code</label>
+            <input type="text" required id="office-code">
+        </div>
+        <div class="input-box">
+            <label for="job-title">Job Title</label>
+            <input type="text" required id="job-title">
+        </div>
+
+        <!-- button in right box of form -->
+       <div class="input-box">
+        <button id="register-btn" style="background-color: rgb(58, 94, 226);">Register</button>
+        <button id="update-btn" disabled="disabled" style="background-color:rgb(66, 147, 66);">Update</button>
+       </div>
+    </form>
+
+    </div>
+
+ </div>
+<script src="./script.js"></script>
+</body>
+</html>
