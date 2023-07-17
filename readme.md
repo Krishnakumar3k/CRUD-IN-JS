@@ -4,7 +4,11 @@
 
 # [Link of live Project](https://crudoprjs.netlify.app/)
 
-![Page](./img/Ldpage.png)
+<!-- ![Page](./img/Ldpage.png) -->
+![Ldpage](https://github.com/Krishnakumar3k/CRUD-IN-JS/assets/111342671/227b39f7-6773-4f4f-b686-52755d2b60f0)
+
+
+
 
 # What I learnt here from this project
 
