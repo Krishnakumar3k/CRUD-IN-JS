@@ -2,9 +2,9 @@
 
 ![Badge]()
 
-# [Link of live Project]()
+# [Link of live Project](https://crudoprjs.netlify.app/)
 
-![LCO](./img/Laningpage-3.png)
+![Page](./img/Ldpage.png)
 
 # What I learnt here from this project
 
